@@ -70,7 +70,7 @@ for(let i = 0; i < comb.length; i++) {
       fields[comb[i][1]].classList.add('active');
       fields[comb[i][2]].classList.add('active');
       res.innerText = 'Выиграли х'
-    },1500)
+    },2000)
     game.removeEventListener('click', init)
   }
 
@@ -82,14 +82,14 @@ for(let i = 0; i < comb.length; i++) {
       fields[comb[i][1]].classList.add('active');
       fields[comb[i][2]].classList.add('active');
       res.innerText = 'Выиграли 0'
-    },1500)
+    },2000)
     game.removeEventListener('click', init)
   }
 
   else if(count === 9) {
     setTimeout(() => {
       res.innerText = 'Ничья'
-    },1500)
+    },2000)
     
     game.removeEventListener('click', init)
   }

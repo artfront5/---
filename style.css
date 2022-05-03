@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(rgba(0,0,0,0.4), transparent 1px),
+  linear-gradient(90deg, rgba(0,0,0,0.4), transparent 1px);
+  background-size: 30px 30px;
+}
+
+.res {
+  color: green;
+  font-weight: bold;
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 50px; /*чтобы не смещался текст */
+}
+
+.game {
+  width: 360px;
+  height: 360px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 30px, 0;
+  outline: 1px solid blue;
+}
+
+.field {
+  width: 120px;
+  height: 120px;
+  border: 1px solid blue;
+  cursor: pointer;
+}
+
+.new-game {
+  width: 250px;
+  height: 50px;
+  border: none;
+  color: rgb(255, 255, 255);
+  background: rgb(40, 132, 251);
+  margin-top: 50px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.new-game:hover {
+      box-shadow: 0 0 15px #305dd6, 0 0 250px #229fe8;
+}
+
+.active {
+  background: rgba(0, 255, 0, 0.5)
+}
+.circle {
+  width: 100%;
+  height: 100%;
+  stroke-dasharray: 283;
+  stroke-dashoffset: 283;
+  animation: draw 1s forwards;
+}
+
+.cross {
+  width: 100%;
+  height: 100%;
+}
+
+.first {
+  stroke-dasharray: 125;
+  stroke-dashoffset: 125;
+  animation: draw 0.5s forwards;
+}
+
+.second {
+  stroke-dasharray: 125;
+  stroke-dashoffset: 125;
+  animation: draw 0.5s 0.5s forwards;
+}
+
+@keyframes draw {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}

@@ -6,13 +6,13 @@ let step = false;
 let count = 0;
 let circle = `<svg class="circle">
 <circle r="45" cx="58" cy="58" stroke="blue"
-stroke-width="5" fill="none" stroke-linecap="round" />
+stroke-width="3" fill="none" stroke-linecap="round" />
 </svg>`;
 let cross = `<svg class="cross">
 <line class="first" x1="15" y1="15" x2="100" y2="100"
-stroke="green" stroke-width="5" stroke-linecap="round" />
+stroke="green" stroke-width="3" stroke-linecap="round" />
 <line class="second" x1="100" y1="15" x2="15" y2="100"
-stroke="green" stroke-width="5" stroke-linecap="round" />
+stroke="green" stroke-width="3" stroke-linecap="round" />
 </svg>`;
 
 function stepCross(target) {
